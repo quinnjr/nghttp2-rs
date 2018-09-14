@@ -1,0 +1,20 @@
+[package]
+name = "nghttp2-rs"
+version = "0.1.0"
+authors = ["Joseph Quinn <quinn.josephr@protonmail.com>"]
+description = "High-level Rust library binding to libnghttp2."
+keywords = ["http2", "nghttp2", "http", "bindings", "ffi"]
+categories = ["web-programming::http-server"]
+homepage = "https://github.com/quinnjr/nghttp2-rs"
+repository = "https://github.com/quinnjr/nghttp2-rs"
+documentation = "https://docs.rs/nghttp2-rs"
+readme = "README.md"
+license = "ISC"
+
+[badges]
+maintenance = { status = "actively-developed" }
+travis-ci = { repository = "quinnjr/nghttp2-rs", branch = "master" }
+
+[dependencies]
+nghttp2-sys = "0"
+libc = "*"

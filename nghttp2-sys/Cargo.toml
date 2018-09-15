@@ -1,0 +1,21 @@
+[package]
+name = "nghttp2-sys"
+version = "0.1.2"
+authors = ["Joseph Quinn <quinn.josephr@protonmail.com>"]
+description = "Rust bindings for libnghttp2, generated with bindgen."
+keywords = ["http2", "nghttp2", "http", "bindings", "ffi"]
+categories = ["external-ffi-bindings", "web-programming::http-server"]
+homepage = "https://github.com/quinnjr/nghttp2-rs/tree/master/nghttp2-sys"
+repository = "https://github.com/quinnjr/nghttp2-rs/tree/master/nghttp2-sys"
+documentation = "https://docs.rs/nghttp2-sys"
+readme = "README.md"
+license = "ISC"
+links = "nghttp2"
+build = "build.rs"
+
+[badges]
+maintenance = { status = "actively-developed" }
+travis-ci = { repository = "quinnjr/nghttp2-sys", branch = "master" }
+
+[build-dependencies]
+bindgen = "0"

@@ -1,0 +1,18 @@
+dist: trusty
+sudo: required
+language: rust
+rust:
+  - stable
+  - nightly
+script:
+  - cargo build
+  - cargo test
+matrix:
+  allow_failures:
+    - rust: nightly
+  fast_finish: true
+cache: cargo
+before_script:
+  - wget https://github.com/nghttp2/nghttp2/releases/download/v1.33.0/nghttp2-1.33.0.tar.xz
+  - tar xvf ./nghttp2-1.33.0.tar.xz
+  - cd ./nghttp2-1.33.0 && ./configure --prefix=/usr && make && sudo make install

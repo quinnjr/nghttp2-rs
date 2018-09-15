@@ -1,6 +1,6 @@
 [package]
 name = "nghttp2-sys"
-version = "0.1.2"
+version = "0.1.1"
 authors = ["Joseph Quinn <quinn.josephr@protonmail.com>"]
 description = "Rust bindings for libnghttp2, generated with bindgen."
 keywords = ["http2", "nghttp2", "http", "bindings", "ffi"]

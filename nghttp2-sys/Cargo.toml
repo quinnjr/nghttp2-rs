@@ -18,4 +18,9 @@ maintenance = { status = "actively-developed" }
 travis-ci = { repository = "quinnjr/nghttp2-sys", branch = "master" }
 
 [build-dependencies]
-bindgen = "0"
+bindgen = "0.40.0"
+
+[features]
+default = []
+rustfmt = []
+rustup = ["rustfmt"]

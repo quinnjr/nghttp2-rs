@@ -1,0 +1,12 @@
+edition = "Edition2018"
+merge_imports = true
+normalize_comments = true
+reorder_imports = true
+reorder_modules = true
+reorder_impl_items = true
+tab_spaces = 2
+use_try_shorthand = true
+wrap_comments = true
+struct_trailing_comma = "Never"
+match_block_trailing_comma = false
+trailing_comma = "Never"

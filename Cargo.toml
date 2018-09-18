@@ -1,6 +1,6 @@
 [package]
 name = "nghttp2-rs"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Joseph Quinn <quinn.josephr@protonmail.com>"]
 description = "High-level Rust library binding to libnghttp2."
 keywords = ["http2", "nghttp2", "http", "bindings", "ffi"]
@@ -22,8 +22,16 @@ members = [
 
 [dependencies]
 nghttp2-sys = { path = "nghttp2-sys" }
-libc = "0"
-futures = "0.1"
+libc = "0.2.43"
+futures = "0.1.24"
+http = "0.1.13"
+slog = "2.3.3"
+
+[dev-dependencies]
+futures-cpupool = "0.1.8"
+num_cpus = "1.8.0"
+clap = "2.32.0"
+slog-term = "2.4.0"
 
 [profile.dev]
 opt-level = 0
